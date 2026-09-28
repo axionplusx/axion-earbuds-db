@@ -1,8 +1,45 @@
 {
   "schema_version": 2,
-  "database_version": "2026.09.28",
+  "database_version": "2026.09.28.master",
   "updated_at": "2026-09-28T00:00:00Z",
   "devices": [
+    {
+      "id": "xiaomi_mi_ebs_basic",
+      "category": "original",
+      "brand": "Xiaomi",
+      "model": "Mi True Wireless EBs Basic",
+      "protocol": "clone_name_match",
+      "identifiers": {
+        "manufacturer_id": "0x038F",
+        "service_uuid": "0xFE95"
+      },
+      "matched_names": [
+        "Mi True Wireless EBs Basic",
+        "Mi True Wireless EBs Basic_L",
+        "Mi True Wireless EBs Basic_R",
+        "Mi True Wireless Earbuds Basic",
+        "Mi True Wireless Earbuds Basic 2",
+        "Redmi AirDots",
+        "Redmi AirDots_R",
+        "Redmi AirDots_L",
+        "Redmi AirDots 2"
+      ],
+      "rssi_trigger_threshold": -70,
+      "assets": {
+        "case_image_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/mi_ebs_basic_case.png",
+        "left_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/mi_ebs_basic_left.png",
+        "right_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/mi_ebs_basic_right.png",
+        "local_fallback_res": "ic_earbuds_case",
+        "accent_color": "#FF6700"
+      },
+      "battery_spec": {
+        "fallback_battery_gatt": true,
+        "left_bud_byte": 6,
+        "right_bud_byte": 6,
+        "case_byte": 7,
+        "charging_status_byte": 8
+      }
+    },
     {
       "id": "apple_airpods_pro_2",
       "category": "original",
@@ -20,7 +57,7 @@
         "case_image_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_pro_2_case.png",
         "left_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_pro_2_left.png",
         "right_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_pro_2_right.png",
-        "local_fallback_res": "ic_airpods_pro_2",
+        "local_fallback_res": "ic_earbuds_case",
         "accent_color": "#007AFF"
       },
       "battery_spec": {
@@ -29,6 +66,308 @@
         "right_bud_byte": 6,
         "case_byte": 7,
         "charging_status_byte": 8
+      }
+    },
+    {
+      "id": "apple_airpods_4",
+      "category": "original",
+      "brand": "Apple",
+      "model": "AirPods 4 (Active Noise Cancellation)",
+      "protocol": "apple_proximity",
+      "identifiers": {
+        "manufacturer_id": "0x004C",
+        "beacon_type": "0x07",
+        "device_model_id": ["0x1B20", "0x1C20"]
+      },
+      "matched_names": ["AirPods 4", "AirPods"],
+      "rssi_trigger_threshold": -65,
+      "assets": {
+        "case_image_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_3_case.png",
+        "left_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_3_left.png",
+        "right_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_3_right.png",
+        "local_fallback_res": "ic_earbuds_case",
+        "accent_color": "#007AFF"
+      },
+      "battery_spec": {
+        "fallback_battery_gatt": false,
+        "left_bud_byte": 6,
+        "right_bud_byte": 6,
+        "case_byte": 7,
+        "charging_status_byte": 8
+      }
+    },
+    {
+      "id": "apple_airpods_3",
+      "category": "original",
+      "brand": "Apple",
+      "model": "AirPods (3rd Generation)",
+      "protocol": "apple_proximity",
+      "identifiers": {
+        "manufacturer_id": "0x004C",
+        "beacon_type": "0x07",
+        "device_model_id": ["0x1420"]
+      },
+      "matched_names": ["AirPods"],
+      "rssi_trigger_threshold": -65,
+      "assets": {
+        "case_image_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_3_case.png",
+        "left_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_3_left.png",
+        "right_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_3_right.png",
+        "local_fallback_res": "ic_earbuds_case",
+        "accent_color": "#007AFF"
+      },
+      "battery_spec": {
+        "fallback_battery_gatt": false,
+        "left_bud_byte": 6,
+        "right_bud_byte": 6,
+        "case_byte": 7,
+        "charging_status_byte": 8
+      }
+    },
+    {
+      "id": "apple_airpods_pro_1",
+      "category": "original",
+      "brand": "Apple",
+      "model": "AirPods Pro (1st Generation)",
+      "protocol": "apple_proximity",
+      "identifiers": {
+        "manufacturer_id": "0x004C",
+        "beacon_type": "0x07",
+        "device_model_id": ["0x0E20"]
+      },
+      "matched_names": ["AirPods Pro"],
+      "rssi_trigger_threshold": -65,
+      "assets": {
+        "case_image_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_pro_1_case.png",
+        "left_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_pro_1_left.png",
+        "right_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_pro_1_right.png",
+        "local_fallback_res": "ic_earbuds_case",
+        "accent_color": "#007AFF"
+      },
+      "battery_spec": {
+        "fallback_battery_gatt": false,
+        "left_bud_byte": 6,
+        "right_bud_byte": 6,
+        "case_byte": 7,
+        "charging_status_byte": 8
+      }
+    },
+    {
+      "id": "apple_airpods_2",
+      "category": "original",
+      "brand": "Apple",
+      "model": "AirPods (2nd Generation)",
+      "protocol": "apple_proximity",
+      "identifiers": {
+        "manufacturer_id": "0x004C",
+        "beacon_type": "0x07",
+        "device_model_id": ["0x0F20", "0x0220"]
+      },
+      "matched_names": ["AirPods"],
+      "rssi_trigger_threshold": -65,
+      "assets": {
+        "case_image_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_3_case.png",
+        "left_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_3_left.png",
+        "right_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_3_right.png",
+        "local_fallback_res": "ic_earbuds_case",
+        "accent_color": "#007AFF"
+      },
+      "battery_spec": {
+        "fallback_battery_gatt": false,
+        "left_bud_byte": 6,
+        "right_bud_byte": 6,
+        "case_byte": 7,
+        "charging_status_byte": 8
+      }
+    },
+    {
+      "id": "apple_airpods_max",
+      "category": "original",
+      "brand": "Apple",
+      "model": "AirPods Max",
+      "protocol": "apple_proximity",
+      "identifiers": {
+        "manufacturer_id": "0x004C",
+        "beacon_type": "0x07",
+        "device_model_id": ["0x0A20"]
+      },
+      "matched_names": ["AirPods Max"],
+      "rssi_trigger_threshold": -65,
+      "assets": {
+        "case_image_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_max.png",
+        "left_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_max.png",
+        "right_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_max.png",
+        "local_fallback_res": "ic_earbuds_case",
+        "accent_color": "#475569"
+      },
+      "battery_spec": {
+        "fallback_battery_gatt": false,
+        "left_bud_byte": 6,
+        "right_bud_byte": 6,
+        "case_byte": 7,
+        "charging_status_byte": 8
+      }
+    },
+    {
+      "id": "samsung_galaxy_buds_3_pro",
+      "category": "original",
+      "brand": "Samsung",
+      "model": "Galaxy Buds3 Pro",
+      "protocol": "samsung_buds",
+      "identifiers": {
+        "manufacturer_id": "0x0075",
+        "device_model_id": ["0x0120"]
+      },
+      "matched_names": ["Galaxy Buds3 Pro", "Buds3 Pro"],
+      "rssi_trigger_threshold": -68,
+      "assets": {
+        "case_image_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/galaxy_buds2_pro_case.png",
+        "left_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/galaxy_buds2_pro_left.png",
+        "right_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/galaxy_buds2_pro_right.png",
+        "local_fallback_res": "ic_earbuds_case",
+        "accent_color": "#94A3B8"
+      },
+      "battery_spec": {
+        "fallback_battery_gatt": false,
+        "left_bud_byte": 5,
+        "right_bud_byte": 6,
+        "case_byte": 7,
+        "charging_status_byte": 8
+      }
+    },
+    {
+      "id": "samsung_galaxy_buds_2_pro",
+      "category": "original",
+      "brand": "Samsung",
+      "model": "Galaxy Buds2 Pro",
+      "protocol": "samsung_buds",
+      "identifiers": {
+        "manufacturer_id": "0x0075",
+        "device_model_id": ["0x0118"]
+      },
+      "matched_names": ["Galaxy Buds2 Pro", "Buds2 Pro"],
+      "rssi_trigger_threshold": -68,
+      "assets": {
+        "case_image_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/galaxy_buds2_pro_case.png",
+        "left_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/galaxy_buds2_pro_left.png",
+        "right_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/galaxy_buds2_pro_right.png",
+        "local_fallback_res": "ic_earbuds_case",
+        "accent_color": "#7B519D"
+      },
+      "battery_spec": {
+        "fallback_battery_gatt": false,
+        "left_bud_byte": 5,
+        "right_bud_byte": 6,
+        "case_byte": 7,
+        "charging_status_byte": 8
+      }
+    },
+    {
+      "id": "samsung_galaxy_buds_fe",
+      "category": "original",
+      "brand": "Samsung",
+      "model": "Galaxy Buds FE",
+      "protocol": "samsung_buds",
+      "identifiers": {
+        "manufacturer_id": "0x0075",
+        "device_model_id": ["0x0119"]
+      },
+      "matched_names": ["Galaxy Buds FE", "Buds FE"],
+      "rssi_trigger_threshold": -68,
+      "assets": {
+        "case_image_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/galaxy_buds2_pro_case.png",
+        "left_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/galaxy_buds2_pro_left.png",
+        "right_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/galaxy_buds2_pro_right.png",
+        "local_fallback_res": "ic_earbuds_case",
+        "accent_color": "#475569"
+      },
+      "battery_spec": {
+        "fallback_battery_gatt": false,
+        "left_bud_byte": 5,
+        "right_bud_byte": 6,
+        "case_byte": 7,
+        "charging_status_byte": 8
+      }
+    },
+    {
+      "id": "sony_wf_1000xm5",
+      "category": "original",
+      "brand": "Sony",
+      "model": "WF-1000XM5",
+      "protocol": "fast_pair",
+      "identifiers": {
+        "service_uuid": "0xFE2C",
+        "model_id_hex": "0x0A2B4C"
+      },
+      "matched_names": ["WF-1000XM5"],
+      "rssi_trigger_threshold": -65,
+      "assets": {
+        "case_image_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/sony_wf1000xm5_case.png",
+        "left_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/sony_wf1000xm5_left.png",
+        "right_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/sony_wf1000xm5_right.png",
+        "local_fallback_res": "ic_earbuds_case",
+        "accent_color": "#B49B67"
+      },
+      "battery_spec": {
+        "fallback_battery_gatt": false,
+        "left_bud_byte": 4,
+        "right_bud_byte": 5,
+        "case_byte": 6,
+        "charging_status_byte": 7
+      }
+    },
+    {
+      "id": "nothing_ear_2",
+      "category": "original",
+      "brand": "Nothing",
+      "model": "Nothing Ear (2)",
+      "protocol": "fast_pair",
+      "identifiers": {
+        "service_uuid": "0xFE2C",
+        "model_id_hex": "0x0C3D5E"
+      },
+      "matched_names": ["Ear (2)", "Nothing Ear (2)"],
+      "rssi_trigger_threshold": -65,
+      "assets": {
+        "case_image_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_pro_2_case.png",
+        "left_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_pro_2_left.png",
+        "right_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_pro_2_right.png",
+        "local_fallback_res": "ic_earbuds_case",
+        "accent_color": "#EF4444"
+      },
+      "battery_spec": {
+        "fallback_battery_gatt": false,
+        "left_bud_byte": 4,
+        "right_bud_byte": 5,
+        "case_byte": 6,
+        "charging_status_byte": 7
+      }
+    },
+    {
+      "id": "google_pixel_buds_pro",
+      "category": "original",
+      "brand": "Google",
+      "model": "Google Pixel Buds Pro",
+      "protocol": "fast_pair",
+      "identifiers": {
+        "service_uuid": "0xFE2C",
+        "model_id_hex": "0x0B1A2C"
+      },
+      "matched_names": ["Pixel Buds Pro"],
+      "rssi_trigger_threshold": -65,
+      "assets": {
+        "case_image_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_pro_2_case.png",
+        "left_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_pro_2_left.png",
+        "right_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_pro_2_right.png",
+        "local_fallback_res": "ic_earbuds_case",
+        "accent_color": "#FBBC04"
+      },
+      "battery_spec": {
+        "fallback_battery_gatt": false,
+        "left_bud_byte": 4,
+        "right_bud_byte": 5,
+        "case_byte": 6,
+        "charging_status_byte": 7
       }
     },
     {
@@ -55,8 +394,61 @@
         "case_image_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_pro_2_case.png",
         "left_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_pro_2_left.png",
         "right_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_pro_2_right.png",
-        "local_fallback_res": "ic_airpods_pro_clone",
+        "local_fallback_res": "ic_earbuds_case",
         "accent_color": "#F59E0B"
+      },
+      "battery_spec": {
+        "fallback_battery_gatt": true,
+        "left_bud_byte": 6,
+        "right_bud_byte": 6,
+        "case_byte": 7,
+        "charging_status_byte": 8
+      }
+    },
+    {
+      "id": "clone_tws_i12",
+      "category": "clone",
+      "brand": "Clone / TWS",
+      "model": "TWS i12 / AirPods 2 Copy",
+      "protocol": "clone_name_match",
+      "identifiers": {
+        "manufacturer_id": "0x004C",
+        "device_model_id": ["0x0220"]
+      },
+      "matched_names": ["i12", "i12-TWS", "i12 TWS", "AirPods", "TWS"],
+      "rssi_trigger_threshold": -68,
+      "assets": {
+        "case_image_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_3_case.png",
+        "left_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_3_left.png",
+        "right_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_3_right.png",
+        "local_fallback_res": "ic_earbuds_case",
+        "accent_color": "#10B981"
+      },
+      "battery_spec": {
+        "fallback_battery_gatt": true,
+        "left_bud_byte": 6,
+        "right_bud_byte": 6,
+        "case_byte": 7,
+        "charging_status_byte": 8
+      }
+    },
+    {
+      "id": "clone_pro_4_mini",
+      "category": "clone",
+      "brand": "Clone / TWS",
+      "model": "Pro 4 TWS Mini",
+      "protocol": "clone_name_match",
+      "identifiers": {
+        "manufacturer_id": "0x004C"
+      },
+      "matched_names": ["Pro 4", "Pro4", "Pro 4 TWS", "Mini Pro 4"],
+      "rssi_trigger_threshold": -68,
+      "assets": {
+        "case_image_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_3_case.png",
+        "left_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_3_left.png",
+        "right_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_3_right.png",
+        "local_fallback_res": "ic_earbuds_case",
+        "accent_color": "#10B981"
       },
       "battery_spec": {
         "fallback_battery_gatt": true,
