@@ -1,10 +1,11 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "database_version": "2026.09.28",
   "updated_at": "2026-09-28T00:00:00Z",
   "devices": [
     {
       "id": "apple_airpods_pro_2",
+      "category": "original",
       "brand": "Apple",
       "model": "AirPods Pro (2nd Generation)",
       "protocol": "apple_proximity",
@@ -13,11 +14,12 @@
         "beacon_type": "0x07",
         "device_model_id": ["0x1320", "0x1420"]
       },
+      "matched_names": ["AirPods Pro", "AirPods Pro - Find My"],
       "rssi_trigger_threshold": -65,
       "assets": {
-        "case_image_url": "https://cdn.axion-os.org/earbuds/apple_airpods_pro_2_case.png",
-        "left_bud_url": "https://cdn.axion-os.org/earbuds/apple_airpods_pro_2_left.png",
-        "right_bud_url": "https://cdn.axion-os.org/earbuds/apple_airpods_pro_2_right.png",
+        "case_image_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_pro_2_case.png",
+        "left_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_pro_2_left.png",
+        "right_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_pro_2_right.png",
         "local_fallback_res": "ic_airpods_pro_2",
         "accent_color": "#007AFF"
       },
@@ -29,39 +31,30 @@
       }
     },
     {
-      "id": "samsung_galaxy_buds_2_pro",
-      "brand": "Samsung",
-      "model": "Galaxy Buds2 Pro",
-      "protocol": "samsung_buds",
+      "id": "clone_airpods_pro_tws",
+      "category": "clone",
+      "brand": "Clone / TWS",
+      "model": "AirPods Pro (Copy / TWS Clone)",
+      "protocol": "clone_name_match",
       "identifiers": {
-        "manufacturer_id": "0x0075",
-        "device_model_id": ["0x0118"]
+        "manufacturer_id": "0x004C",
+        "device_model_id": ["0x0E20", "0x0220"]
       },
+      "matched_names": ["AirPods Pro", "TWS Pro", "Pro 4", "AirPlus Pro", "AP Pro"],
       "rssi_trigger_threshold": -68,
       "assets": {
-        "case_image_url": "https://cdn.axion-os.org/earbuds/galaxy_buds2_pro_case.png",
-        "left_bud_url": "https://cdn.axion-os.org/earbuds/galaxy_buds2_pro_left.png",
-        "right_bud_url": "https://cdn.axion-os.org/earbuds/galaxy_buds2_pro_right.png",
-        "local_fallback_res": "ic_galaxy_buds2_pro",
-        "accent_color": "#7B519D"
-      }
-    },
-    {
-      "id": "sony_wf_1000xm5",
-      "brand": "Sony",
-      "model": "WF-1000XM5",
-      "protocol": "fast_pair",
-      "identifiers": {
-        "service_uuid": "0xFE2C",
-        "model_id_hex": "0x0A2B4C"
+        "case_image_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_pro_2_case.png",
+        "left_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_pro_2_left.png",
+        "right_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_pro_2_right.png",
+        "local_fallback_res": "ic_airpods_pro_clone",
+        "accent_color": "#10B981"
       },
-      "rssi_trigger_threshold": -65,
-      "assets": {
-        "case_image_url": "https://cdn.axion-os.org/earbuds/sony_wf1000xm5_case.png",
-        "left_bud_url": "https://cdn.axion-os.org/earbuds/sony_wf1000xm5_left.png",
-        "right_bud_url": "https://cdn.axion-os.org/earbuds/sony_wf1000xm5_right.png",
-        "local_fallback_res": "ic_sony_wf1000xm5",
-        "accent_color": "#B49B67"
+      "battery_spec": {
+        "fallback_battery_gatt": true,
+        "left_bud_byte": 6,
+        "right_bud_byte": 6,
+        "case_byte": 7,
+        "charging_status_byte": 8
       }
     }
   ]
