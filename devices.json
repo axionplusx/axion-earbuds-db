@@ -24,6 +24,7 @@
         "accent_color": "#007AFF"
       },
       "battery_spec": {
+        "fallback_battery_gatt": false,
         "left_bud_byte": 6,
         "right_bud_byte": 6,
         "case_byte": 7,
@@ -34,20 +35,28 @@
       "id": "clone_airpods_pro_tws",
       "category": "clone",
       "brand": "Clone / TWS",
-      "model": "AirPods Pro (Copy / TWS Clone)",
+      "model": "AirPods Pro (High Copy / TWS Clone)",
       "protocol": "clone_name_match",
       "identifiers": {
         "manufacturer_id": "0x004C",
         "device_model_id": ["0x0E20", "0x0220"]
       },
-      "matched_names": ["AirPods Pro", "TWS Pro", "Pro 4", "AirPlus Pro", "AP Pro"],
+      "matched_names": [
+        "AirPods Pro",
+        "TWS Pro",
+        "Pro 4",
+        "AirPlus Pro",
+        "AP Pro",
+        "AirPods",
+        "Wireless Earbuds"
+      ],
       "rssi_trigger_threshold": -68,
       "assets": {
         "case_image_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_pro_2_case.png",
         "left_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_pro_2_left.png",
         "right_bud_url": "https://raw.githubusercontent.com/axionplusx/axion-earbuds-db/main/assets/apple_airpods_pro_2_right.png",
         "local_fallback_res": "ic_airpods_pro_clone",
-        "accent_color": "#10B981"
+        "accent_color": "#F59E0B"
       },
       "battery_spec": {
         "fallback_battery_gatt": true,
